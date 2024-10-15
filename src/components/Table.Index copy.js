@@ -15,7 +15,7 @@ function TableIndex() {
     const calculateTotalEligibility = () => {
         let total = 0;
         data.forEach((ele) => {
-            ele["All Skill Badges & Games Completed"] == "Yes" && total++;
+            ele["All 3 Pathways Completed - Yes or No"] == "Yes" && total++;
         })
         setEligibleforSwags(total)
     }
@@ -35,9 +35,9 @@ function TableIndex() {
     }
 
     return (
-        <div className='w-full relative px-3 overflow-x-scroll'>
+        <div className='w-full relative px-3'>
             <div className="sec m-auto my-10 space-y-8 w-1/2 mob:w-full flex flex-col">
-                <div className="message bg-yellow-100 text-yellow-700 p-5 rounded-lg shadow-lg shadow-yellow-300/30 text-center border border-yellow-300/30"><p className="text-center"> : GDG-SATI :</p>
+                <div className="message bg-yellow-100 text-yellow-700 p-5 rounded-lg shadow-lg shadow-yellow-300/30 text-center border border-yellow-300/30"><p className="text-center"> : GDSC-SATI :</p>
                 <p><span className="text-black">Google Cloud GenAI Jam 24</span>  </p>
                 </div>
 
@@ -65,20 +65,20 @@ function TableIndex() {
             </div>
 
 
-            <table className='mx-auto table-fixed m-5 overflow-x-scroll '>
+            <table className='mx-auto table-fixed m-5  '>
                 <thead className='shadow-md text-sm bg-blue-500 text-gray-200 sticky top-2 z-10'>
                     <tr className='text-center '>
                         <td className="rounded-ss-lg w-80 p-2 border-r-2 border-r-gray-300">Name</td>
-                        <td className="p-2 border-r-2 border-r-gray-300">Email</td>
+                        {/* <td className="p-2 border-r-2 border-r-gray-300">Email</td> */}
                         <td className="p-2 border-r-2 border-r-gray-300">Redemption Status</td>
                        {/* <td className="mob:hidden p-2 px-10 border-r-2 border-r-gray-300">Institution</td> */}
-                        <td className="mob:rounded-se-lg p-2 border-r-2 border-r-gray-300 max-w-[150px]">All Skill Badges & Games Completed</td>
-                        {/* <td className="mob:rounded-se-lg p-2 border-r-2 border-r-gray-300 max-w-[150px]">Completions of all Pathways</td> */}
-                        <td className="p-2 border-r-2 border-r-gray-300 max-w-[150px]">No. of Skill Badges Completed</td>
-                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Names of Completed Skill Badges</td>
-                        <td className="mob:hidden rounded-se-lg p-2 max-w-[150px]">No. of Arcade Games Completed</td>
-                        <td className="p-2 border-r-2 mob:hidden border-r-gray-300">Names of Completed Arcade Games</td>
-                        <td className="p-2 border-r-2 border-r-gray-300">Profile URL Status</td>
+                     
+                        <td className="mob:rounded-se-lg p-2 border-r-2 border-r-gray-300 max-w-[150px]">Completions of all Pathways</td>
+                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Prompt Design in Vertex AI Completiond</td>
+                        <td className="mob:hidden p-2 border-r-2 border-r-gray-300 max-w-[150px]">Develop GenAI Apps with Gemini and Streamlit Completion</td>
+                        <td className="mob:hidden rounded-se-lg p-2 max-w-[150px]">GenAI Game Completed</td>
+                        {/* <td className="p-2 border-r-2 border-r-gray-300">Enroll Date & Time</td> */}
+                        {/* <td className="p-2 border-r-2 border-r-gray-300">Enroll. Status</td> */}
                         {/* <td className='p-2 border-r-2 border-r-gray-300'>Profile URL</td> */}
                     </tr>
                 </thead>
